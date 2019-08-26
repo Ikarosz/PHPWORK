@@ -1,0 +1,89 @@
+header { grid-area: h; }
+#jobb { grid-area: j; }
+#kozep { grid-area: k; }
+#bal { grid-area: b; }
+footer { grid-area: f;}
+#logo{ grid-area: l; }
+#adatok { grid-area: a; }
+
+#tartalom{
+   
+    display: grid;
+    grid-template-areas:
+        ' h h h '
+        'j k b'
+        'f f f';
+}
+
+footer{
+    display: grid;
+    grid-template-areas:
+        ' l a ';
+}
+
+#banner{
+    height: 300px;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+header, footer {
+    background-color: red;
+}
+
+#jobb, #közép{
+    background-color: red;
+}
+
+#bal{
+    background-color: red;
+    color: white;
+    
+   
+}
+
+#kozep, footer{
+    color: #000000;
+}
+
+#logo2{
+       width: 200px;
+}
+
+#logo{
+ 
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+#adatok{
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+a:link{
+    color: #00008B;
+}
+a:hover
+{
+    color: #F0FFFF;
+}
+
+a:vlink, a:alink{
+    color: #F0FFFF;
+}
+
+a{
+    display: block;
+}
+
+header, footer, #banner, #bal, #kozep, #jobb, #logo, #adatok{
+    border: black solid 1px;
+}
+
+.haz{
+    height: 20px;
+    width: 20px;
+}
